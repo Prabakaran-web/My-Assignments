@@ -1,17 +1,28 @@
-package week1.day1;
+package week3.day2;
 
-public class Chrome {
+public class Chrome extends Browser{
 
+	
+	public void openIncognito()
+	
+	{
+		
+		System.out.println("Incognito Window opened");
+	}
+	
+	public void clearCache() {
+		
+		
+	System.out.println("ClearCache Done");
+	}
+	
 	public static void main(String[] args) {
-		float version=91.0f;
-	    String developer="Google";
-	    boolean isBeta=false;
-	    int releaseYear=2008;
-	    char shortcut='C';
-	    		
-	    		System.out.println("Version is "+version+
-	  "\nDeveloper is"+developer+
-	  "\nBeta Value is"+isBeta+
-	 "\nRelease Year is"+releaseYear+
-	    	"\nShortcut key is"+shortcut);
-	    		}}
+		Chrome options= new Chrome();
+		options.clearCache();
+		options.openIncognito();
+		options.openURL();
+		options.closeBrowser();
+		options.navigateback();
+	}
+}
+
